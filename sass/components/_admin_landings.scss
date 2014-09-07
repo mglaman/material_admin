@@ -1,0 +1,22 @@
+// File for landing navigation pages.
+.admin-list {
+  dt {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: 22px;
+    font-weight: normal;
+    border-bottom: 1px solid #CCC;
+  }
+}
+
+@include breakpoint($tab) {
+  dt, dd {
+    float: left;
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  dt {
+    clear: left;
+  }
+}

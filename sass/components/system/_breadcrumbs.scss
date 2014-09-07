@@ -1,0 +1,16 @@
+// Breadcrumbs
+ol.breadcrumb {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    margin: 0 4px 0 0;
+    padding: 0;
+    display: inline;
+    font-size: 12px;
+    a {
+      margin-right: 4px;
+      padding: 0;
+    }
+  }
+}

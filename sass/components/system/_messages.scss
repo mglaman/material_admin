@@ -1,0 +1,42 @@
+.messages,  {
+  position: relative;
+  margin: 6px 0;
+  background-image: none;
+  padding: 10px 8px 10px 40px;
+  border-width: 0 0 0 6px;
+  border-style: solid;
+  border-color: #999;
+
+  ul {
+    margin: 0 0 0 1em;
+    padding: 0;
+  }
+  li {
+    list-style-image: none;
+  }
+
+  a {
+    color: inherit;
+    font-weight: 600;
+  }
+  i.fa {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 22px;
+    font-weight: 100;
+  }
+}
+.messages--warning, tr.warning, tr.info {
+  background-color: $yellow-200;
+  border-color: $yellow-500;
+}
+.messages--error, tr.error {
+  background-color: $red-200;
+  border-color: $red-500;
+}
+.messages--status, tr.ok {
+  // Material Design Green
+  background-color: $green-200;
+  border-color: $green-500;
+}

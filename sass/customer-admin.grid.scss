@@ -1,0 +1,28 @@
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+
+// Globbing from within sub-folders only works with relative paths.
+@import "variables/**/*";
+
+.l-page {
+  margin: 0 10px;
+}
+
+@include breakpoint($tab, true) {
+  .l-page {
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+  }
+}
+@include breakpoint($desk, true) {
+  .l-page {
+    width: 960px;
+  }
+}
+@include breakpoint($desk-x, true) {
+  .l-page {
+    width: 1200px;
+  }
+}

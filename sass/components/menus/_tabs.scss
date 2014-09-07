@@ -1,0 +1,50 @@
+/* Tabs */
+.tabs {
+  a {
+    padding: 0.3em 0.8em;
+    border-bottom: 2px solid transparent;
+    color: $grey-400;
+    @include transition(border-bottom 0.1s ease);
+
+    &.active {
+      border-bottom: 2px solid $blue-grey-100;
+    }
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid $blue-grey-100;
+    }
+  }
+}
+
+// Primary tabs
+.tabs--primary {
+  margin-bottom: 1em;
+  border-bottom: 2px solid $blue-grey-100;
+  li {
+    a {
+      margin-bottom: -2px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 14px;
+
+      &:hover {
+        color: $blue-500;
+        background-color: transparent;
+        text-decoration: none;
+        border-bottom: 2px solid $blue-500;
+      }
+      &.active {
+        background-color: transparent;
+        border-bottom: 2px solid $blue-500;
+        color: $blue-500;
+      }
+    }
+  }
+}
+
+/* Secondary Tabs */
+.tabs--secondary a {
+  padding: 0.2em 0.5em;
+  margin: 0.4em 0;
+  font-size: 0.9em;
+}

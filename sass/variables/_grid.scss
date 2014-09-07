@@ -1,0 +1,11 @@
+// Tablet breakpoint and container size
+$tab: 740px;
+//Desktop breakpoint and container size
+$desk: 980px;
+//Large Desktop breakpoint and container size
+$desk-x: 1220px;
+
+$grids: 12;
+$gutters: 20px;
+$gutter-styles: 'split';
+$grids: add-grid(12 at $tab);

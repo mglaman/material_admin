@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg6174"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="checkboxes-disabled.svg"
+   inkscape:export-filename="/var/www/contractorcrm/profiles/contractorcrm/themes/customer_admin/images/checkboxes.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs6176">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath286">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,24 24,24 24,0 0,0 0,24 z"
+         id="path288" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="408.04922"
+     inkscape:cy="520.59403"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1325"
+     inkscape:window-height="744"
+     inkscape:window-x="41"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata6179">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 407.99366,496.36344 -17.5,0 c -1.38125,0 -2.5,1.11875 -2.5,2.5 l 0,17.5 c 0,1.38125 1.11875,2.5 2.5,2.5 l 17.5,0 c 1.38125,0 2.5,-1.11875 2.5,-2.5 l 0,-17.5 c 0,-1.38125 -1.11875,-2.5 -2.5,-2.5 m 0,2.5 0,17.5 -17.5,10e-4 0,-17.50125 17.5,0"
+       style="opacity:0.53999299000000001;fill:#bdbdbd;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path278"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g280"
+       transform="matrix(1.25,0,0,1.25,384.10776,517.4097)"
+       style="fill:#bdbdbd;fill-opacity:1">
+      <g
+         id="g282"
+         style="fill:#bdbdbd;fill-opacity:1">
+        <g
+           id="g284"
+           clip-path="url(#clipPath286)"
+           style="fill:#bdbdbd;fill-opacity:1">
+          <g
+             id="g290"
+             transform="translate(10,17)"
+             style="fill:#bdbdbd;fill-opacity:1">
+            <path
+               d="M 0,0 -5,-5 -3.586,-6.414 0,-2.828 7.586,-10.414 9,-9 0,0 z m 9,-14 -14,0 c -1.105,0 -2,0.895 -2,2 l 0,14 c 0,1.105 0.895,2 2,2 L 9,4 c 1.105,0 2,-0.895 2,-2 l 0,-14 c 0,-1.105 -0.895,-2 -2,-2"
+               style="fill:#bdbdbd;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path292"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

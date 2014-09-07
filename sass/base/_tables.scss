@@ -1,0 +1,29 @@
+table {
+  width: 100%;
+  max-width: 100%;
+
+  &.fixed {
+    table-layout: fixed;
+  }
+
+  thead {
+    th {
+      padding: 6px 10px;
+      background-color: $blue-500;
+      border: 1px solid $blue-700;
+      color: white;
+      vertical-align: bottom;
+
+      a, a.active {
+        color: white;
+      }
+    }
+  }
+  tbody {
+    td {
+      padding: 6px 10px;
+      border: 1px solid $blue-grey-100;
+      vertical-align: middle;
+    }
+  }
+}

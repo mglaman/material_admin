@@ -1,0 +1,163 @@
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.form-wrapper {
+  @include pie-clearfix;
+}
+
+// Form Filters
+.exposed-filters {
+  @include pie-clearfix;
+
+  .filters,
+  .filters .form-item,
+  .form-actions{
+    display: inline-block;
+  }
+}
+
+// Labels
+label {
+  cursor: pointer;
+}
+.form-item  label:not(.option), .form-actions label, .views-exposed-form label {
+  font-weight: 600;
+  font-variant: small-caps;
+  font-size: 15px;
+  text-transform: lowercase;
+  letter-spacing: 0.45px;
+}
+
+// Checkboxes, radios.
+.form-type-checkbox {
+  // Hide the checkbox
+  input[type=checkbox] {
+    display: none;
+  }
+  label {
+    display: inline-block;
+    height: 20px;
+    padding-left: 30px;
+    background-image: url(../images/checkboxes.png);
+    background-repeat: no-repeat;
+    line-height: 20px;
+  }
+  input[type=checkbox]:checked ~ label {
+    background-position: 0 -22px;
+  }
+  // Disabled checkbox
+  input[type=checkbox]:disabled ~ label {
+    background-image: url(../images/checkboxes-disabled.png);
+  }
+}
+.form-type-radio {
+  // Hide the checkbox
+  input[type=radio] {
+    display: none;
+  }
+  label {
+    display: inline-block;
+    height: 21px;
+    padding-left: 30px;
+    background-image: url(../images/radios.png);
+    background-repeat: no-repeat;
+    line-height: 20px;
+  }
+  input[type=radio]:checked ~ label {
+    background-position: 0 -22px;
+  }
+  // Disabled checkbox
+  input[type=radio]:disabled ~ label {
+    background-image: url(../images/radios-disabled.png);
+  }
+}
+
+// Buttons
+@mixin button-reset {
+  padding: 0 15px;
+  background-color: #eceff1; // Blue Grey 50, Default.
+  border: 0;
+  box-shadow: 0px 1px 1px rgba(black,0.2);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  @include transition(all 0.15s ease-out);
+  &:hover {
+    background-color: #cfd8dc; // Blue Grey 100, Default.
+    @include transition(all 0.15s ease-out);
+  }
+  &:focus {
+    outline: 0;
+    box-shadow: 0px 1px 1px rgba(black,0.4);
+  }
+  &:nth-child(n+1) {
+    margin-right: 6px;
+  }
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  @include button-reset;
+}
+
+// Form actions buttons.
+.form-actions {
+  .form-submit {
+    background-color: #738ffe; // Blue 400
+    color: #e7e9fd;
+    &:hover {
+      background-color: #5677fc; // Blue 500
+    }
+  }
+  .form-delete {
+    background-color: #e84e40; // Red 400
+    color: #fde0dc;
+    &:hover {
+      background-color: #e51c23; // Red 500
+    }
+  }
+}
+
+// Textual input
+@mixin input-reset {
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-bottom: 4px;
+  background-color: #fafafa; // Grey 50.
+  border: 0;
+  border-bottom: 2px solid #cfd8dc; // Blue Grey 100, Default.
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  @include transition(all 0.15s ease-out);
+  &:hover {
+    border-bottom: 2px solid #b0bec5; // Blue Grey 100, Default.
+    @include transition(all 0.15s ease-out);
+  }
+  &:focus {
+    outline: 0;
+    border-bottom: 2px solid #b0bec5; // Blue Grey 100, Default.
+  }
+  &:nth-child(n+1) {
+    margin-right: 6px;
+  }
+}
+
+.form-text, .form-textarea {
+  @include input-reset;
+}
+
+.form-select {
+  @include input-reset;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
