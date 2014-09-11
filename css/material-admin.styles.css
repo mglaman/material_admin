@@ -943,6 +943,23 @@ html, body {
   font-size: 0.9em;
 }
 
+.system-themes-list-disabled .theme-selector {
+  width: 50%;
+}
+
+@media (min-width: 740px) {
+  .system-themes-list-disabled .theme-selector {
+    width: 33%;
+  }
+}
+@media (min-width: 980px) {
+  .system-themes-list-disabled .theme-selector {
+    width: 25%;
+  }
+  .system-themes-list-disabled .theme-selector:nth-child(5n+1) {
+    clear: left;
+  }
+}
 ol.breadcrumb {
   margin: 0;
   padding: 0;
