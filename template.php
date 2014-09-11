@@ -36,3 +36,46 @@ function material_admin_page_alter(&$page) {
     drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', array('type' => 'external'));
   }
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Customize the update settings form.
+ */
+function material_admin_form_update_settings_alter(&$form, &$form_state) {
+  $form['admin_container'] = array(
+    '#type' => 'container',
+    '#attributes' => array(
+      'class' => array(
+        'clearfix',
+      ),
+    ),
+  );
+  $form['admin_container']['admin_left'] = array(
+    '#type' => 'container',
+    '#attributes' => array(
+      'class' => array(
+        'admin__left',
+      ),
+    ),
+  );
+  $form['admin_container']['admin_right'] = array(
+    '#type' => 'container',
+    '#attributes' => array(
+      'class' => array(
+        'admin__right',
+      ),
+    ),
+  );
+
+  // Left
+  $form['admin_container']['admin_left']['update_check_frequency'] = $form['update_check_frequency'];
+  unset($form['update_check_frequency']);
+  $form['admin_container']['admin_left']['update_check_disabled'] = $form['update_check_disabled'];
+  unset($form['update_check_disabled']);
+  // Right
+  $form['admin_container']['admin_right']['update_notify_emails'] = $form['update_notify_emails'];
+  unset($form['update_notify_emails']);
+  $form['admin_container']['admin_right']['update_notification_threshold'] = $form['update_notification_threshold'];
+  unset($form['update_notification_threshold']);
+}
