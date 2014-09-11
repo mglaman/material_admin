@@ -40,3 +40,21 @@
   background-color: $green-200;
   border-color: $green-500;
 }
+
+table.system-status-report {
+  td {
+    padding: 8px;
+    border: 0;
+  }
+  tr {
+    border-top: 1px solid $grey-50;
+  }
+  a {
+    color: $grey-900;
+    border-bottom: 1px dotted $grey-900;
+    &:hover {
+      text-decoration: none;
+      border-bottom: 1px solid $grey-900;
+    }
+  }
+}

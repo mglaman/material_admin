@@ -33,7 +33,7 @@
 
 /* Animated throbber */
 html.js input.form-autocomplete {
-  background-image: url('../images/misc/draggable.png?1410401815');
+  background-image: url('../images/misc/draggable.png?1410403649');
   background-position: 100% 2px;
   /* LTR */
   background-repeat: no-repeat;
@@ -83,7 +83,7 @@ fieldset.collapsible .fieldset-legend {
 }
 
 .resizable-textarea .grippie {
-  background: #eeeeee url('../images/misc/draggable.png?1410401815') no-repeat center 2px;
+  background: #eeeeee url('../images/misc/draggable.png?1410403649') no-repeat center 2px;
   border: 1px solid #ddd;
   border-top-width: 0;
   cursor: s-resize;
@@ -114,7 +114,7 @@ a.tabledrag-handle:hover {
 }
 
 a.tabledrag-handle .handle {
-  background: url('../images/misc/draggable.png?1410401815') no-repeat 6px 9px;
+  background: url('../images/misc/draggable.png?1410403649') no-repeat 6px 9px;
   height: 25px;
   margin: -0.4em 0.5em;
   /* LTR */
@@ -139,17 +139,17 @@ div.indentation {
 }
 
 div.tree-child {
-  background: url('../images/misc/draggable.png?1410401815') no-repeat 11px center;
+  background: url('../images/misc/draggable.png?1410403649') no-repeat 11px center;
   /* LTR */
 }
 
 div.tree-child-last {
-  background: url('../images/misc/draggable.png?1410401815') no-repeat 11px center;
+  background: url('../images/misc/draggable.png?1410403649') no-repeat 11px center;
   /* LTR */
 }
 
 div.tree-child-horizontal {
-  background: url('../images/misc/draggable.png?1410401815') no-repeat -11px center;
+  background: url('../images/misc/draggable.png?1410403649') no-repeat -11px center;
 }
 
 .tabledrag-toggle-weight-wrapper {
@@ -195,7 +195,7 @@ table.sticky-header {
 }
 
 .ajax-progress .throbber {
-  background: transparent url('../images/misc/draggable.png?1410401815') no-repeat 0px -18px;
+  background: transparent url('../images/misc/draggable.png?1410403649') no-repeat 0px -18px;
   float: left;
   /* LTR */
   height: 15px;
@@ -969,4 +969,20 @@ ol.breadcrumb li a {
 .messages--status, tr.ok {
   background-color: #72d572;
   border-color: #259b24;
+}
+
+table.system-status-report td {
+  padding: 8px;
+  border: 0;
+}
+table.system-status-report tr {
+  border-top: 1px solid #fafafa;
+}
+table.system-status-report a {
+  color: #212121;
+  border-bottom: 1px dotted #212121;
+}
+table.system-status-report a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #212121;
 }

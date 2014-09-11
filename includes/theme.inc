@@ -155,3 +155,64 @@ function material_admin_menu_local_tasks(&$variables) {
 
   return $output;
 }
+
+/**
+ * Returns HTML for the status report.
+ *
+ * @param $variables
+ *   An associative array containing:
+ *   - requirements: An array of requirements.
+ *
+ * @ingroup themeable
+ */
+function material_admin_status_report($variables) {
+  $requirements = $variables['requirements'];
+  $severities = array(
+    REQUIREMENT_INFO => array(
+      'title' => t('Info'),
+      'class' => 'info',
+    ),
+    REQUIREMENT_OK => array(
+      'title' => t('OK'),
+      'class' => 'ok',
+    ),
+    REQUIREMENT_WARNING => array(
+      'title' => t('Warning'),
+      'class' => 'warning',
+    ),
+    REQUIREMENT_ERROR => array(
+      'title' => t('Error'),
+      'class' => 'error',
+    ),
+  );
+
+  $status_icon = array(
+    REQUIREMENT_OK => 'fa-check-circle',
+    REQUIREMENT_ERROR => 'fa-times-circle',
+    // @todo: Is there a better one?
+    REQUIREMENT_INFO => 'fa-exclamation-triangle',
+    REQUIREMENT_WARNING => 'fa-exclamation-triangle',
+  );
+
+  $output = '<table class="system-status-report">';
+
+  foreach ($requirements as $requirement) {
+    if (empty($requirement['#type'])) {
+      $severity_level = isset($requirement['severity']) ? (int) $requirement['severity'] : 0;
+      $severity = $severities[$severity_level];
+      $severity['icon'] = '<i title="' . $severity['title'] . '" class="fa ' . $status_icon[$severity_level] . '"><span class="element-invisible">' . $severity['title'] . '</span></i>';
+
+      // Output table row(s)
+      if (!empty($requirement['description'])) {
+        $output .= '<tr class="' . $severity['class'] . ' merge-down"><td class="status-icon">' . $severity['icon'] . '</td><td class="status-title">' . $requirement['title'] . '</td><td class="status-value">' . $requirement['value'] . '</td></tr>';
+        $output .= '<tr class="' . $severity['class'] . ' merge-up"><td colspan="3" class="status-description">' . $requirement['description'] . '</td></tr>';
+      }
+      else {
+        $output .= '<tr class="' . $severity['class'] . '"><td class="status-icon">' . $severity['icon'] . '</td><td class="status-title">' . $requirement['title'] . '</td><td class="status-value">' . $requirement['value'] . '</td></tr>';
+      }
+    }
+  }
+
+  $output .= '</table>';
+  return $output;
+}
