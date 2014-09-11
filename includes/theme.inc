@@ -10,7 +10,7 @@
  *
  * @ingroup themeable
  */
-function customer_admin_breadcrumb($variables) {
+function material_admin_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
 
   if (!empty($breadcrumb)) {
@@ -30,7 +30,7 @@ function customer_admin_breadcrumb($variables) {
  *
  * @ingroup themeable
  */
-function customer_admin_item_list($variables) {
+function material_admin_item_list($variables) {
   $items = $variables['items'];
   $title = $variables['title'];
   $type = $variables['type'];
@@ -91,7 +91,7 @@ function customer_admin_item_list($variables) {
  *
  * @ingroup themeable
  */
-function customer_admin_status_messages($variables) {
+function material_admin_status_messages($variables) {
   $display = $variables['display'];
   $output = '';
 
@@ -137,7 +137,7 @@ function customer_admin_status_messages($variables) {
  *
  * @ingroup themeable
  */
-function customer_admin_menu_local_tasks(&$variables) {
+function material_admin_menu_local_tasks(&$variables) {
   $output = '';
 
   if (!empty($variables['primary'])) {
