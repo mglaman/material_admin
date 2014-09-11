@@ -1,5 +1,5 @@
 name = Material Admin
-description = Please provide a description for your theme.
+description = A responsive administration theme for Drupal, inspired by Google's Material Design.
 ;base theme = omega
 screenshot = screenshot.png
 engine = phptemplate
