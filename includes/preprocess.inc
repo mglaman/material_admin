@@ -8,7 +8,7 @@
 /**
  * Implements hook_preprocess_block().
  */
-function customer_admin_preprocess_block(&$variables) {
+function material_admin_preprocess_block(&$variables) {
   $variables['title_attributes_array']['class'][] = 'block__title';
   $variables['content_attributes_array']['class'][] = 'block__content';
 
@@ -24,7 +24,7 @@ function customer_admin_preprocess_block(&$variables) {
  * @todo: Improve by creating proper elements.. or something.
  *        Maybe preprocess_actions() and set flag vs text identifier?
  */
-function customer_admin_preprocess_button(&$variables) {
+function material_admin_preprocess_button(&$variables) {
   $element = &$variables['element'];
 
   // Remove/Delete
@@ -40,14 +40,14 @@ function customer_admin_preprocess_button(&$variables) {
 /**
  * Implements hook_preprocess_html().
  */
-function customer_admin_preprocess_html(&$variables) {
+function material_admin_preprocess_html(&$variables) {
 
 }
 
 /**
  * Implements hook_preprocess_page().
  */
-function customer_admin_preprocess_page(&$variables) {
+function material_admin_preprocess_page(&$variables) {
   // You can use preprocess hooks to modify the variables before they are passed
   // to the theme function or template file.
 }

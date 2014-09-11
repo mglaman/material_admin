@@ -8,7 +8,7 @@
 /**
  * Implements hook_element_info_alter().
  */
-function customer_admin_element_info_alter(&$type) {
+function material_admin_element_info_alter(&$type) {
   // Add our own process to textfields so that placeholders are always set.
   $type['textfield']['#process'][] = 'customer_admin_fix_textfield_placeholders';
 }
@@ -19,7 +19,7 @@ function customer_admin_element_info_alter(&$type) {
  * Form API marks elements as #processed after these run, not when it hits the
  * theme layer.
  */
-function customer_admin_fix_textfield_placeholders($element, &$form_state) {
+function material_admin_fix_textfield_placeholders($element, &$form_state) {
   if (isset($element['#title'])) {
     $element['#attributes']['placeholder'] = $element['#title'];
   }

@@ -1,4 +1,4 @@
-name = Customer Admin
+name = Material Admin
 description = Please provide a description for your theme.
 ;base theme = omega
 screenshot = screenshot.png
@@ -7,13 +7,13 @@ core = 7.x
 
 
 ; Stylesheets
-stylesheets[all][] = css/customer-admin.normalize.css
-stylesheets[all][] = css/customer-admin.grid.css
-stylesheets[all][] = css/customer-admin.styles.css
-stylesheets[all][] = css/customer-admin.no-query.css
+stylesheets[all][] = css/material-admin.normalize.css
+stylesheets[all][] = css/material-admin.grid.css
+stylesheets[all][] = css/material-admin.styles.css
+stylesheets[all][] = css/material-admin.no-query.css
 
 ; Scripts
-scripts[] = js/customer-admin.behaviors.js
+scripts[] = js/material-admin.behaviors.js
 
 ; Regions
 regions[branding] = Branding
