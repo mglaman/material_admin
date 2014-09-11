@@ -10,7 +10,7 @@
  */
 function material_admin_element_info_alter(&$type) {
   // Add our own process to textfields so that placeholders are always set.
-  $type['textfield']['#process'][] = 'customer_admin_fix_textfield_placeholders';
+  $type['textfield']['#process'][] = 'material_admin_fix_textfield_placeholders';
 }
 
 /**
