@@ -33,14 +33,7 @@
 
 /* Animated throbber */
 html.js input.form-autocomplete {
-<<<<<<< HEAD
-  background-image: url('../images/misc/draggable.png?1410403473');
-  background-position: 100% 2px;
-  /* LTR */
-  background-repeat: no-repeat;
-=======
   background-image: none;
->>>>>>> Autocomplete field. Close #15
 }
 
 html.js input.throbbing {
@@ -88,7 +81,7 @@ fieldset.collapsible .fieldset-legend {
 }
 
 .resizable-textarea .grippie {
-  background: #eeeeee url('../images/misc/draggable.png?1410403473') no-repeat center 2px;
+  background: #eeeeee url('../images/misc/draggable.png?1410403649') no-repeat center 2px;
   border: 1px solid #ddd;
   border-top-width: 0;
   cursor: s-resize;
@@ -119,7 +112,7 @@ a.tabledrag-handle:hover {
 }
 
 a.tabledrag-handle .handle {
-  background: url('../images/misc/draggable.png?1410403473') no-repeat 6px 9px;
+  background: url('../images/misc/draggable.png?1410403649') no-repeat 6px 9px;
   height: 25px;
   margin: -0.4em 0.5em;
   /* LTR */
@@ -144,17 +137,17 @@ div.indentation {
 }
 
 div.tree-child {
-  background: url('../images/misc/draggable.png?1410403473') no-repeat 11px center;
+  background: url('../images/misc/draggable.png?1410403649') no-repeat 11px center;
   /* LTR */
 }
 
 div.tree-child-last {
-  background: url('../images/misc/draggable.png?1410403473') no-repeat 11px center;
+  background: url('../images/misc/draggable.png?1410403649') no-repeat 11px center;
   /* LTR */
 }
 
 div.tree-child-horizontal {
-  background: url('../images/misc/draggable.png?1410403473') no-repeat -11px center;
+  background: url('../images/misc/draggable.png?1410403649') no-repeat -11px center;
 }
 
 .tabledrag-toggle-weight-wrapper {
@@ -200,7 +193,7 @@ table.sticky-header {
 }
 
 .ajax-progress .throbber {
-  background: transparent url('../images/misc/draggable.png?1410403473') no-repeat 0px -18px;
+  background: transparent url('../images/misc/draggable.png?1410403649') no-repeat 0px -18px;
   float: left;
   /* LTR */
   height: 15px;
@@ -393,16 +386,16 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
   margin-bottom: 3px;
   text-transform: uppercase;
   -webkit-appearance: none;
+  -webkit-transition: all 0.15s ease-out;
   -moz-transition: all 0.15s ease-out;
   -o-transition: all 0.15s ease-out;
-  -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
 }
 button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background-color: #cfd8dc;
+  -webkit-transition: all 0.15s ease-out;
   -moz-transition: all 0.15s ease-out;
   -o-transition: all 0.15s ease-out;
-  -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
 }
 button:focus, html input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
@@ -439,16 +432,16 @@ button:nth-child(n+1), html input[type="button"]:nth-child(n+1), input[type="res
   line-height: 1.8;
   margin-top: 3px;
   margin-bottom: 3px;
+  -webkit-transition: all 0.15s ease-out;
   -moz-transition: all 0.15s ease-out;
   -o-transition: all 0.15s ease-out;
-  -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
 }
 .form-text:hover, .form-textarea:hover {
   border-bottom: 2px solid #b0bec5;
+  -webkit-transition: all 0.15s ease-out;
   -moz-transition: all 0.15s ease-out;
   -o-transition: all 0.15s ease-out;
-  -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
 }
 .form-text:focus, .form-textarea:focus {
@@ -470,18 +463,18 @@ button:nth-child(n+1), html input[type="button"]:nth-child(n+1), input[type="res
   line-height: 1.8;
   margin-top: 3px;
   margin-bottom: 3px;
+  -webkit-transition: all 0.15s ease-out;
   -moz-transition: all 0.15s ease-out;
   -o-transition: all 0.15s ease-out;
-  -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
   padding-bottom: 7px;
   padding-top: 5px;
 }
 .form-select:hover {
   border-bottom: 2px solid #b0bec5;
+  -webkit-transition: all 0.15s ease-out;
   -moz-transition: all 0.15s ease-out;
   -o-transition: all 0.15s ease-out;
-  -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
 }
 .form-select:focus {
@@ -563,9 +556,9 @@ html, body {
 a {
   color: #428bca;
   text-decoration: none;
+  -webkit-transition: color 0.2s ease-in;
   -moz-transition: color 0.2s ease-in;
   -o-transition: color 0.2s ease-in;
-  -webkit-transition: color 0.2s ease-in;
   transition: color 0.2s ease-in;
 }
 
@@ -909,9 +902,9 @@ html, body {
   padding: 0.3em 0.8em;
   border-bottom: 2px solid transparent;
   color: #bdbdbd;
+  -webkit-transition: border-bottom 0.1s ease;
   -moz-transition: border-bottom 0.1s ease;
   -o-transition: border-bottom 0.1s ease;
-  -webkit-transition: border-bottom 0.1s ease;
   transition: border-bottom 0.1s ease;
 }
 .tabs a.active {

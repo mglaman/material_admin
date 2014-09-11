@@ -1,5 +1,5 @@
-/*! normalize.css v1.1.0 | MIT License | git.io/normalize */
-/*! normalize.css v1.1.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
 article,
 aside,
 details,
@@ -17,10 +17,10 @@ summary {
 
 audio,
 canvas,
+progress,
 video {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
+  vertical-align: baseline;
 }
 
 audio:not([controls]) {
@@ -28,33 +28,25 @@ audio:not([controls]) {
   height: 0;
 }
 
-[hidden] {
+[hidden],
+template {
   display: none;
 }
 
-/*! normalize.css v1.1.0 | Base | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
 html {
-  font-size: 100%;
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-}
-
-html,
-button,
-input,
-select,
-textarea {
-  font-family: sans-serif;
 }
 
 body {
   margin: 0;
 }
 
-/*! normalize.css v1.1.0 | Links | MIT License | git.io/normalize */
-a:focus {
-  outline: thin dotted;
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+a {
+  background: transparent;
 }
 
 a:active,
@@ -62,37 +54,7 @@ a:hover {
   outline: 0;
 }
 
-/*! normalize.css v1.1.0 | Typography | MIT License | git.io/normalize */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0;
-}
-
-h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
-}
-
-h4 {
-  font-size: 1em;
-  margin: 1.33em 0;
-}
-
-h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0;
-}
-
-h6 {
-  font-size: 0.67em;
-  margin: 2.33em 0;
-}
-
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -102,56 +64,18 @@ strong {
   font-weight: bold;
 }
 
-blockquote {
-  margin: 1em 40px;
-}
-
 dfn {
   font-style: italic;
 }
 
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 mark {
   background: #ff0;
   color: #000;
-}
-
-p,
-pre {
-  margin: 1em 0;
-}
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-
-q {
-  quotes: none;
-}
-
-q:before,
-q:after {
-  content: '';
-  content: none;
 }
 
 small {
@@ -174,76 +98,51 @@ sub {
   bottom: -0.25em;
 }
 
-dl,
-menu,
-ol,
-ul {
-  margin: 1em 0;
-}
-
-dd {
-  margin: 0 0 0 40px;
-}
-
-menu,
-ol,
-ul {
-  padding: 0 0 0 40px;
-}
-
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
-}
-
-/*! normalize.css v1.1.0 | Embedded Content | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
 img {
   border: 0;
-  -ms-interpolation-mode: bicubic;
 }
 
 svg:not(:root) {
   overflow: hidden;
 }
 
-/*! normalize.css v1.1.0 | Figures | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
 figure {
-  margin: 0;
+  margin: 1em 40px;
 }
 
-/*! normalize.css v1.1.0 | Forms | MIT License | git.io/normalize */
-form {
-  margin: 0;
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
 }
 
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+pre {
+  overflow: auto;
 }
 
-legend {
-  border: 0;
-  padding: 0;
-  white-space: normal;
-  *margin-left: -7px;
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
 button,
 input,
+optgroup,
 select,
 textarea {
-  font-family: inherit;
-  font-size: 100%;
+  color: inherit;
+  font: inherit;
   margin: 0;
-  vertical-align: baseline;
-  *vertical-align: middle;
 }
 
-button,
-input {
-  line-height: normal;
+button {
+  overflow: visible;
 }
 
 button,
@@ -257,7 +156,6 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
-  *overflow: visible;
 }
 
 button[disabled],
@@ -265,12 +163,25 @@ html input[disabled] {
   cursor: default;
 }
 
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
-  *height: 13px;
-  *width: 13px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
 }
 
 input[type="search"] {
@@ -285,21 +196,34 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
   border: 0;
   padding: 0;
 }
 
 textarea {
   overflow: auto;
-  vertical-align: top;
 }
 
-/*! normalize.css v1.1.0 | Tables | MIT License | git.io/normalize */
+optgroup {
+  font-weight: bold;
+}
+
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
 }
 
 *, *:after, *:before {
