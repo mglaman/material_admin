@@ -49,7 +49,7 @@ label {
     line-height: 20px;
   }
   input[type=checkbox]:checked ~ label {
-    background-position: 0 -22px;
+    background-position: 0 -20px;
   }
   // Disabled checkbox
   input[type=checkbox]:disabled ~ label {
