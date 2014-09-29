@@ -40,6 +40,7 @@ label {
   input[type=checkbox] {
     display: none;
   }
+
   label {
     display: inline-block;
     height: 20px;
@@ -55,6 +56,11 @@ label {
   input[type=checkbox]:disabled ~ label {
     background-image: url(../images/checkboxes-disabled.png);
   }
+}
+// Drupal puts a lot of checkboxes in tables without a label..
+// @todo: Find a way to not require this so there is universal styling.
+table .form-type-checkbox input[type=checkbox] {
+  display: inherit;
 }
 .form-type-radio {
   // Hide the checkbox

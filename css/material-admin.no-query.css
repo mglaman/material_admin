@@ -81,7 +81,7 @@ fieldset.collapsible .fieldset-legend {
 }
 
 .resizable-textarea .grippie {
-  background: #eeeeee url('../images/misc/draggable.png?1410403649') no-repeat center 2px;
+  background: #eeeeee url('../images/misc/draggable.png?1411962451') no-repeat center 2px;
   border: 1px solid #ddd;
   border-top-width: 0;
   cursor: s-resize;
@@ -112,7 +112,7 @@ a.tabledrag-handle:hover {
 }
 
 a.tabledrag-handle .handle {
-  background: url('../images/misc/draggable.png?1410403649') no-repeat 6px 9px;
+  background: url('../images/misc/draggable.png?1411962451') no-repeat 6px 9px;
   height: 25px;
   margin: -0.4em 0.5em;
   /* LTR */
@@ -137,17 +137,17 @@ div.indentation {
 }
 
 div.tree-child {
-  background: url('../images/misc/draggable.png?1410403649') no-repeat 11px center;
+  background: url('../images/misc/draggable.png?1411962451') no-repeat 11px center;
   /* LTR */
 }
 
 div.tree-child-last {
-  background: url('../images/misc/draggable.png?1410403649') no-repeat 11px center;
+  background: url('../images/misc/draggable.png?1411962451') no-repeat 11px center;
   /* LTR */
 }
 
 div.tree-child-horizontal {
-  background: url('../images/misc/draggable.png?1410403649') no-repeat -11px center;
+  background: url('../images/misc/draggable.png?1411962451') no-repeat -11px center;
 }
 
 .tabledrag-toggle-weight-wrapper {
@@ -193,7 +193,7 @@ table.sticky-header {
 }
 
 .ajax-progress .throbber {
-  background: transparent url('../images/misc/draggable.png?1410403649') no-repeat 0px -18px;
+  background: transparent url('../images/misc/draggable.png?1411962451') no-repeat 0px -18px;
   float: left;
   /* LTR */
   height: 15px;
@@ -354,6 +354,10 @@ label {
 }
 .form-type-checkbox input[type=checkbox]:disabled ~ label {
   background-image: url(../images/checkboxes-disabled.png);
+}
+
+table .form-type-checkbox input[type=checkbox] {
+  display: inherit;
 }
 
 .form-type-radio input[type=radio] {
