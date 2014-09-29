@@ -847,6 +847,12 @@ html, body {
   padding-bottom: 35px;
   background-color: #fafafa;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  *zoom: 1;
+}
+.l-page:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .l-page__wrapper {
