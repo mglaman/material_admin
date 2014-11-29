@@ -11,6 +11,7 @@ stylesheets[all][] = css/material-admin.normalize.css
 stylesheets[all][] = css/material-admin.grid.css
 stylesheets[all][] = css/material-admin.styles.css
 stylesheets[all][] = css/material-admin.no-query.css
+stylesheets[print][] = css/material-admin.print.css
 
 ; Scripts
 scripts[] = js/material-admin.behaviors.js
